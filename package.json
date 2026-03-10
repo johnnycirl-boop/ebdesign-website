@@ -1,0 +1,21 @@
+{
+  "name": "ebdesign-website",
+  "version": "1.0.0",
+  "description": "EBdesign.ie - Professional website for accelerating SE Ireland businesses",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.12",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

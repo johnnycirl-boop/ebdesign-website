@@ -1,0 +1,225 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Banner */
+.heroBanner {
+  background: linear-gradient(135deg, #FFD93D 0%, #FFE563 100%);
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.heroBanner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 16px;
+}
+
+.heroBanner p {
+  font-size: 20px;
+  color: #404040;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About Content */
+.aboutContent {
+  padding: 96px 24px;
+  background-color: #FAFAFA;
+}
+
+.aboutContent .container {}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.grid h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 24px;
+}
+
+.grid h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin: 32px 0 12px 0;
+}
+
+.grid p {
+  font-size: 16px;
+  color: #404040;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Values Section */
+.values {
+  padding: 96px 24px;
+  background-color: #FFFFFF;
+}
+
+.values h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+  color: #202020;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.valueCard {
+  padding: 32px;
+  background-color: #FFFEF0;
+  border-left: 4px solid #FFD93D;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.valueCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 12px;
+}
+
+.valueCard p {
+  font-size: 14px;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+  padding: 96px 24px;
+  background-color: #FAFAFA;
+}
+
+.team h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+  color: #202020;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.whyCard {
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.whyCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 12px;
+}
+
+.whyCard p {
+  font-size: 14px;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #FFD93D 0%, #FFE563 100%);
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  color: #404040;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+  line-height: 1.8;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #202020;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #404040;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroBanner h1 {
+    font-size: 32px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .grid h2 {
+    font-size: 24px;
+  }
+  
+  .values h2,
+  .team h2,
+  .cta h2 {
+    font-size: 28px;
+  }
+  
+  .valuesGrid,
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+}
