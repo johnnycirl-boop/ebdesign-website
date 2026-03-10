@@ -111,7 +111,7 @@ export default function About() {
         <div className={styles.container}>
           <h2>Let's Talk About Your Future</h2>
           <p>Whether you're just starting to think about growth or ready to accelerate, we'd love to explore what's possible for your business.</p>
-          <a href="mailto:hello@ebdesign.ie" className={styles.ctaBtn}>
+          <a href="/contact" className={styles.ctaBtn}>
             Get in Touch
           </a>
         </div>

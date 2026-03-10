@@ -49,13 +49,63 @@
   color: #FFD93D;
 }
 
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #202020;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 16px;
+  .hamburger {
+    display: flex;
   }
-  
+
   .menu {
-    gap: 16px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  /* Hamburger animation */
+  .barOpen:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .barOpen:nth-child(2) {
+    opacity: 0;
+  }
+
+  .barOpen:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 }

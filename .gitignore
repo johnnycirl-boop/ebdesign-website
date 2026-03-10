@@ -7,3 +7,9 @@ build
 .env.local
 .env
 .DS_Store
+.vercel
+.playwright-mcp
+
+# Development screenshots
+*.png
+!public/**/*.png

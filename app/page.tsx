@@ -101,7 +101,7 @@ export default function Home() {
           <p>
             Let's talk about where your business is heading and how we can help get you there faster.
           </p>
-          <Link href="#contact" className={styles.btnLarge}>
+          <Link href="/contact" className={styles.btnLarge}>
             Get in Touch
           </Link>
         </div>

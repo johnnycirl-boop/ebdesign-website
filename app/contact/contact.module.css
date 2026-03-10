@@ -1,0 +1,229 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Banner */
+.heroBanner {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('/images/sunflower-hero.png') center/cover no-repeat;
+  padding: 120px 24px;
+  text-align: center;
+}
+
+.heroBanner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.heroBanner p {
+  font-size: 20px;
+  color: #F0F0F0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Content */
+.contactContent {
+  padding: 96px 24px;
+  background-color: #FAFAFA;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contactItem {
+  padding: 32px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #FFD93D;
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.contactItem h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 8px;
+}
+
+.contactItem a {
+  color: #E6B800;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contactItem a:hover {
+  color: #FFD93D;
+}
+
+.contactItem p {
+  color: #404040;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contactForm {
+  background-color: #FFFFFF;
+  padding: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 14px 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s, background-color 0.2s;
+  background-color: #FAFAFA;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #FFD93D;
+  background-color: #FFFFFF;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #999;
+}
+
+.btnPrimary {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #FFD93D;
+  color: #202020;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #E6B800;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #FFFEF0 0%, #FFFBDB 100%);
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  color: #404040;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+  line-height: 1.8;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #202020;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #404040;
+  transform: translateY(-2px);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .heroBanner {
+    padding: 80px 24px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .heroBanner h1 {
+    font-size: 32px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contactForm {
+    padding: 32px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}

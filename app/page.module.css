@@ -8,7 +8,7 @@
 .hero {
   padding: 96px 24px;
   background: linear-gradient(135deg, #FFFEF0 0%, #FFFBDB 100%);
-  min-height: 600px;
+  min-height: min(600px, 80vh);
   display: flex;
   align-items: center;
 }
@@ -158,6 +158,98 @@
   line-height: 1.6;
 }
 
+/* Contact Section */
+.contact {
+  padding: 96px 24px;
+  background-color: #FFFFFF;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contactItem h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 8px;
+}
+
+.contactItem a {
+  color: #E6B800;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contactItem a:hover {
+  color: #FFD93D;
+}
+
+.contactItem p {
+  color: #404040;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 14px 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background-color: #FAFAFA;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #FFD93D;
+  background-color: #FFFFFF;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #999;
+}
+
+.contactForm .btnPrimary {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 /* CTA Section */
 .cta {
   padding: 96px 24px;
@@ -200,7 +292,24 @@
   transform: translateY(-2px);
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
   .hero .container {
     grid-template-columns: 1fr;
@@ -214,7 +323,7 @@
   .heroGraphic {
     min-height: 280px;
   }
-  
+
   .sunflower {
     width: 200px;
     height: 200px;
@@ -234,5 +343,10 @@
   
   .cta h2 {
     font-size: 28px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 }

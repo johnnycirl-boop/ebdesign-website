@@ -6,23 +6,27 @@
 
 /* Hero Banner */
 .heroBanner {
-  background: linear-gradient(135deg, #FFD93D 0%, #FFE563 100%);
-  padding: 96px 24px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('/images/kilkenny-hero.png') center/cover no-repeat;
+  padding: 120px 24px;
   text-align: center;
+  position: relative;
 }
 
 .heroBanner h1 {
   font-size: 48px;
   font-weight: 700;
-  color: #202020;
+  color: #FFFFFF;
   margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .heroBanner p {
   font-size: 20px;
-  color: #404040;
+  color: #F0F0F0;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* About Content */
@@ -197,7 +201,19 @@
   transform: translateY(-2px);
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroBanner {
+    padding: 80px 24px;
+  }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
   .heroBanner h1 {
     font-size: 32px;

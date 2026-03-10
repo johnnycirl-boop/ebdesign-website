@@ -20,7 +20,7 @@ export default function Footer() {
           <div className={styles.section}>
             <h4>Contact</h4>
             <p>
-              <a href="mailto:hello@ebdesign.ie">hello@ebdesign.ie</a>
+              <a href="mailto:info@ebdesign.ie">info@ebdesign.ie</a>
             </p>
           </div>
         </div>
