@@ -33,7 +33,8 @@ export default function TheKennelManager() {
       <section className={styles.intro}>
         <div className={styles.container}>
           <p className={styles.lead}>
-            The Kennel Manager is a brand of EBdesign.
+            The Kennel Manager is a brand of EBdesign, the trading name of
+            EB DESIGN LIMITED (Kilkenny, Ireland).
           </p>
           <p>
             Built and operated by EBdesign in Kilkenny, Ireland, The Kennel Manager
