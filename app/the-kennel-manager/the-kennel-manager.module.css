@@ -1,0 +1,175 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Banner */
+.heroBanner {
+  background: linear-gradient(135deg, #202020 0%, #333333 100%);
+  padding: 120px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFD93D;
+  margin-bottom: 16px;
+}
+
+.heroBanner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.heroBanner p {
+  font-size: 20px;
+  color: #F0F0F0;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Intro / relationship statement */
+.intro {
+  padding: 96px 24px;
+  background-color: #FAFAFA;
+}
+
+.intro .lead {
+  font-size: 22px;
+  font-weight: 600;
+  color: #202020;
+  max-width: 800px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.intro p {
+  font-size: 16px;
+  color: #404040;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 16px auto;
+  text-align: center;
+}
+
+/* Feature grid */
+.features {
+  padding: 96px 24px;
+  background-color: #FFFFFF;
+}
+
+.features h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+  color: #202020;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.featureCard {
+  padding: 32px;
+  background-color: #FFFEF0;
+  border-left: 4px solid #FFD93D;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 12px;
+}
+
+.featureCard p {
+  font-size: 14px;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #FFD93D 0%, #FFE563 100%);
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  color: #404040;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+  line-height: 1.8;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #202020;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #404040;
+  transform: translateY(-2px);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .heroBanner {
+    padding: 80px 24px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .heroBanner h1 {
+    font-size: 32px;
+  }
+
+  .heroBanner p,
+  .intro .lead {
+    font-size: 18px;
+  }
+
+  .features h2,
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

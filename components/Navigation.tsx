@@ -32,6 +32,9 @@ export default function Navigation() {
             <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
           </li>
           <li>
+            <Link href="/the-kennel-manager" onClick={() => setMenuOpen(false)}>The Kennel Manager</Link>
+          </li>
+          <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </li>
         </ul>

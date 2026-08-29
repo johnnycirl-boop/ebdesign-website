@@ -16,7 +16,17 @@ export default function Footer() {
             <h4>Location</h4>
             <p>Kilkenny, Ireland</p>
           </div>
-          
+
+          <div className={styles.section}>
+            <h4>Our Brands</h4>
+            <p>
+              <a href="https://www.thekennelmanager.com" target="_blank" rel="noopener noreferrer">
+                The Kennel Manager
+              </a>
+              {' '}&mdash; kennel management software, a brand of EBdesign.
+            </p>
+          </div>
+
           <div className={styles.section}>
             <h4>Contact</h4>
             <p>
